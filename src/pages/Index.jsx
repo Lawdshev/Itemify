@@ -103,7 +103,7 @@ function Index() {
     <div>
         <Heroe/>
         {/* about */}
-      <div className={`mt-[8%] flex flex-col md:h-[100vh] lg:h-[80vh] px-8 py-4 md:py-0 md:px-0 ${styles.aboutContainer}`}>
+      <div className={`mt-[8%] flex flex-col md:h-[100vh] lg:h-[70vh] xl:h-[80vh] px-8 py-4 md:py-0 md:px-0 ${styles.aboutContainer}`}>
         <h6 className='font-poppins text-[18px] md:text-[25px] font-[600] leading-[38px] text-center text-[#E9AD11] 3xl:text-[35px] 4xl:text-[40px]'>About Our Product</h6>
         <h1 className='font-poppins text-[20px] md:text-[35px] text-[#535252] font-[800] leading-[30px] md:leading-[53px] text-center mt-[1.5%] md:px-[8%] 3xl:text-[45px] 4xl:text-[50px] '>Make informed, data-driven decisions with tailored item bank reporting</h1>
         <p className='font-poppins text-[12px] md:text-[15px] font-[400] leading-[22.6px] text-center mt-[5%] px-[8%] text-[#535252] 3xl:text-[20px] 4xl:text-[25px]'>This solution automates the entire item authoring process thus enabling a more standardized and scalable environment essential to developing and maintaining effective test/exams.</p>
@@ -123,10 +123,10 @@ function Index() {
             <h3 className='font-poppins font-[600] text-[18px] leading-[27px] text-[#E9AD11] 3xl:text-[22px] 4xl:text-[25px]'>
               Why Choose Us?
             </h3>
-            <h1 className='font-poppins font-[800] text-[24px] lg:text-[28px] leading-[42px] text-[#535252] 3xl:text-[32px] 4xl:text-[36px]'>
+            <h1 className='font-poppins font-[800] text-[20px] md:text-[24px] lg:text-[28px] leading-[42px] text-[#535252] 3xl:text-[32px] 4xl:text-[36px]'>
               Some Words About Us
             </h1>
-            <p className={`font-poppins font-[400] text-[15px] 3xl:text-[20px] 3xl:leading-[35px] 4xl:text-[25px] 4xl:leading-[45px] 5xl:leading-[55px] leading-[27px] ${styles.whyText}`}>This is an item banking system that manages the process of: item authoring, reviewing and test assembly. It is designed to be used by professionals and test developers, teachers and educators on classroom based assessments. Moreover, it is designed with a package of features created specifically to make item and test development easier, faster, user-friendly and more cost effective.</p>
+            <p className={`font-poppins font-[400] text-[13px] 3xl:text-[20px] 3xl:leading-[35px] 4xl:text-[25px] 4xl:leading-[45px] 5xl:leading-[55px] leading-[27px] ${styles.whyText}`}>This is an item banking system that manages the process of: item authoring, reviewing and test assembly. It is designed to be used by professionals and test developers, teachers and educators on classroom based assessments. Moreover, it is designed with a package of features created specifically to make item and test development easier, faster, user-friendly and more cost effective.</p>
             <button className='bg-[#E7BB49] py-[2.5%] w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%] rounded-lg mt-[2%] text-white font-openSans font-[700] leading-[22px] text-[16px] 3xl:text-[20px] 4xl:text-[25px]'>Request Demo</button>
           </div>
           <div className={`w-[90%] md:w-[40%] md:h-[70%] ml-[2.5%] md:mt-[10%] xl:mt-0 relative ${styles.vidDiv}`}>
@@ -175,10 +175,10 @@ function Index() {
 
         {/* elearning */}
         <div className={`${styles.elearning} h-[50vh] md:h-[40vh] lg:h-[50vh] xl:h-[80vh] flex items-center justify-center`}>
-            <div className='h-[80%] md:h-[70%] w-[90%] lg:h-[60%] lg:w-[80%] flex flex-col justify-between items-center '>
+            <div className='h-[90%] md:h-[70%] w-[90%] lg:h-[60%] lg:w-[80%] flex flex-col justify-between items-center '>
               <img src={quote}  className='lg:w-[66px] md:w-[50px] w-[44px] '/>
               <div className='flex flex-col h-[80%] md:h-[70%] lg:h-[70%] items-center justify-between'>
-                <p className='font-poppins text-[15px] 3xl:text-[25px] 4xl:text-[35px] 3xl:leading-[35px] 4xl:leading-[40px] 5xl:leading-[45px] lg:text-[17px] leading-[25.5px] font-[275] text-center text-[#FFFFFF] italic px-8'>It is true that eLearning has come to stay and our desire as learning institution has been fulfilled knowing we can deliver to our students from anywhere they are all round the year and thanks to ScholarRoom.</p>
+                <p className='font-poppins text-[12px] md:text-[15px] 3xl:text-[25px] 4xl:text-[35px] 3xl:leading-[35px] 4xl:leading-[40px] 5xl:leading-[45px] lg:text-[17px] leading-[18px] md:leading-[25.5px] font-[275] text-center text-[#FFFFFF] italic px-8'>It is true that eLearning has come to stay and our desire as learning institution has been fulfilled knowing we can deliver to our students from anywhere they are all round the year and thanks to ScholarRoom.</p>
                 <div className='h-[56px] w-[1px] bg-[#FFFFFF] mt-7'></div> 
                 <p className='text-[#E9AD11] font-semibold text-[15px] 3xl:text-[25px] 4xl:text-[35px] leading-[22px] mt-7'>Ogbonna Jessica</p>  
               </div>
@@ -188,8 +188,8 @@ function Index() {
         {/* JoinUs */}
         <div className='bg-[#F5F5F5] h-[311px] 2xl:h-[30vh] w-full flex justify-center items-center '>
         <div className=' w-full md:w-[90%] xl:w-[70%] h-[60%] flex flex-col items-center justify-between'>
-            <p className='text-[#535252] font-poppins font-medium text-[11px] md:text-[17px] 3xl:text-[30px] 4xl:text-[35px] md:leading-[30px] lg:text-[24px] lg:leading-[36.19px]'>Make informed, data-driven decisions with our item banking solution</p>
-            <p className='text-[#535252] font-poppins font-medium text-[11px] md:text-[17px] md:leading-[30px] lg:text-[24px] 3xl:text-[30px] 4xl:text-[35px] lg:leading-[36.19px]'>Contact Us To Get Started</p>
+            <p className='text-[#535252] font-poppins font-medium text-[12px] md:text-[17px] 3xl:text-[30px] 4xl:text-[35px] md:leading-[30px] lg:text-[24px] lg:leading-[36.19px] text-center px-3 md:px-0'>Make informed, data-driven decisions with our item banking solution</p>
+            <p className='text-[#535252] font-poppins font-medium text-[12px] md:text-[17px] md:leading-[30px] lg:text-[24px] 3xl:text-[30px] 4xl:text-[35px] lg:leading-[36.19px]'>Contact Us To Get Started</p>
             <button className='bg-[#E9AD11] text-[#ffffff] font-openSans text-[16px] 3xl:text-[25px] 4xl:text-[30px] leading-[21.79px] w-[119px] 3xl:w-[200px] 3xl:h-[60px] h-[40px] 2xl:rounded-[10px] rounded-[5px]'>Join us</button>
         </div>
     </div>

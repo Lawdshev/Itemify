@@ -5,12 +5,12 @@ import copy from '../assets/copy.png'
 function FooterOne() {
   return (
     <>
-    <div className='flex flex-col h-[602px] mx-auto bg-[#E9AD11] text-[#FFFFFF] overflow-x-hidden '>
+    <div className='flex flex-col md:h-[602px] mx-auto bg-[#E9AD11] text-[#FFFFFF] overflow-x-hidden '>
         <div className='flex flex-col items-center justify-center py-2 lg:py-12'>
            <h1 className='font-extrabold text-[20px] leading-[36px] md:text-[30px] md:leading-[48px] lg:text-[36px] lg:leading-[54px] font-workSans 3xl:text-[48px] 3xl:leading-[60px]' id='contact'>Contact Us</h1>
            <p id='inTouch' className='text-[#FFFFFF] text-[14px] leading-[20px] md:text-[20px] md:leading-[26px] lg:text-[24px] lg:leading-[30px] font-bold font-inter 3xl:text-[30px] 3xl:leading-[36px]'>Keep in touch with Us</p>
         </div>
-        <div className=' mx-auto  flex flex-wrap h-[60%] pl-[10%] py-4 md:px-8 lg:px-0 xl:px-8 md:py-8 lg:py-4 lg:w-[90%] 5xl:w-[80%]'>
+        <div className=' mx-auto flex flex-wrap h-[60%] pl-[5%] py-4 md:px-8 lg:px-0 xl:px-8 md:py-8 lg:py-4 lg:w-[90%] 5xl:w-[80%]'>
           <div className='flex flex-col h-[33%] lg:w-1/4 w-1/2 md:w-[33%] md:h-[52%] lg:h-[60%] justify-between xl:pl-4'>
              <h1 className='text-[#FFFFFF] text-[12px] leading-[20px] md:text-[14px] lg:text-[16px] font-bold lg:leading-[24px] h-[25%] md:h-[20%] font-inter 3xl:text-[24px] 3xl:leading-[28px] 5xl:text-[30px]5xl:leading-[32px]'>Lagos Office</h1>
              <p className='text-[9px] leading-[15px] md:text-[12px] lg:text-[14px] md:leading-[21px] h-[70%] font-workSans font-medium 3xl:text-[17px] 3xl:leading-[21px] 5xl:text-[18px] '>Plot 1187, Abimbola Awoniyi Close,<br/>
@@ -31,12 +31,12 @@ function FooterOne() {
                 <p>E: abujaoffice@vatebra.com</p>
               </div> 
           </div>
-          <div className='flex flex-col h-[23%] p-0 lg:w-1/4 w-1/2 md:w-[30%] md:h-[39%] lg:h-[46%] justify-between md:pl-6 lg:pl-20'>
+          <div className='flex flex-col h-[23%] p-0 lg:w-1/4 w-1/2 md:w-[30%] md:h-[39%] lg:h-[46%] justify-between md:pl-6 lg:pl-20 mt-2 md:mt-0'>
              <h1 className='text-[#FFFFFF] text-[12px] leading-[20px] md:text-[14px] lg:text-[16px] font-bold lg:leading-[24px] h-[25%] md:h-[20%] w-full font-inter 3xl:text-[24px] 3xl:leading-[28px] 5xl:text-[30px] 5xl:leading-[32px]'>Nairobi Office</h1>
              <p className='text-[10px] leading-[15px] md:text-[12px] lg:text-[14px] md:leading-[21px] h-[70%] font-medium font-workSans 3xl:text-[17px] 3xl:leading-[21px] 5xl:text-[18px]  '>AG02, Madonna House, <br /> Westlands Road, Nairobi, <br /> Kenya</p>
              <p className='font-semibold text-[9px] leading-[15px] md:text-[12px] lg:text-[14px] md:leading-[21px] font-inter 3xl:text-[17px] 3xl:leading-[24px] 5xl:text-[18px] '>E: nairobioffice@vatebra.com</p>
           </div>
-          <div className='flex flex-col h-[29%] lg:w-1/4 w-1/2 md:mt-4 lg:mt-0 md:w-[33%] md:h-[45%] lg:h-[53%] justify-between lg:pl-20'>
+          <div className='flex flex-col h-[29%] lg:w-1/4 w-1/2 md:mt-4 lg:mt-0 md:w-[33%] md:h-[45%] lg:h-[53%] justify-between lg:pl-20 mt-2'>
              <h1 className='text-[#FFFFFF] text-[12px] leading-[20px] md:text-[14px] lg:text-[16px] font-bold lg:leading-[24px] h-[25%] md:h-[20%] font-inter 3xl:text-[24px] 3xl:leading-[28px] 5xl:text-[30px] 5xl:leading-[32px]'>Accra Office</h1>
              <p className='text-[9px] leading-[15px] md:text-[12px] lg:text-[14px] md:leading-[21px] font-medium h-[70%] font-workSans 3xl:text-[17px] 3xl:leading-[21px] 5xl:text-[18px] '>202, Westland Boulevard, <br /> west Legon, Accra, Ghana, <br /> PO Box AN 5208 Accra- <br /> North, Accra Ghana.</p>
              <div className='font-semibold text-[9px] leading-[15px] md:text-[12px] lg:text-[14px] md:leading-[21px] font-inter 3xl:text-[17px] 3xl:leading-[24px] 5xl:text-[18px] '>
