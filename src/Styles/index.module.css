@@ -1,0 +1,64 @@
+.footer {
+    background: rgba(17, 17, 17, 0.89);
+}
+
+.newsCard{
+    box-shadow: 0px 16px 40px rgba(117, 142, 254, 0.25);
+}
+
+.features{
+    background: url(../assets/workplace-team-cooperation-businesswoman-laptop-office\ 1.png);
+    background-color: #111111;
+}
+
+.whyContainer{
+    margin-top: 5vh;
+}
+
+.elearning{
+    background: rgba(17, 17, 17, 0.87);
+}
+
+.read:hover span {
+    display:none
+  }
+.read:hover i {
+    display: block;
+    color: white;
+}
+.read:hover{
+    background-color: black;
+    color: white;
+} 
+
+@media (min-width: 1200px){
+    .aboutContainer{
+        height: 150vh;
+    }
+    .whyContainer{
+        margin-top: 10vh;
+    }
+    .vidDiv{
+        height: 80%;
+    }
+    .vidImg{
+        width: 83%;
+    }
+}
+@media (min-width: 1400px){
+    .aboutContainer{
+        height: 120vh;
+    }
+    .whyContainer{
+        margin-top: 0;
+    }
+    .whyText{
+        height: 50%;
+    }
+    .vidDiv{
+        height: 70%;
+    }
+    .vidImg{
+        width: 95%;
+    }
+}
