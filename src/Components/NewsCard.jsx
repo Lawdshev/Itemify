@@ -9,7 +9,7 @@ function NewsCard({img}) {
             <p className='text-[#E9AD11]'>By Admin</p>
             <p className='text-[#535252]'>06 Aug 2022</p>
         </div>
-        <p className='px-7 2xl:px-14 text-center text-[15px] leading-[25px] text-[#111111BF] h-[20%] w-full self-center 2xl:text-[24px] 2xl:leading-[32px] 4xl:text-[24px] 5xl:text-[30px] 4xl:leading-[38px]'>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever</p>
+        <p className='px-7 2xl:px-14 text-center text-[15px] leading-[25px] xl:mb-[10%] text-[#111111BF] h-[20%] w-full self-center 2xl:text-[24px] 2xl:leading-[32px] 4xl:text-[24px] 5xl:text-[30px] 4xl:leading-[38px]'>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever</p>
         <button className={`bg-[#E9AD11] text-[#F5F5F5] text-[16px] leading-[22px] font-openSans font-bold rounded-[10px] w-[150px] 2xl:w-[30%] 2xl:h-[10%] 2xl:text-[20px] 4xl:text-[24px] h-[50px] self-center -mb-[5%] ${styles.read}`}> <span className='main'>Read More</span> <i class="fa-solid fa-arrow-right-long text-[25px] hidden"></i> </button>
     </div>
   )

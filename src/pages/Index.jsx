@@ -118,21 +118,23 @@ function Index() {
       </div>
       
       {/* why us */}
-      <div className={` md:h-[50vh] lg:h-[40vh]  xl:h-[60vh] justify-around md:justify-center items-center bg-[#d9d9d944] flex flex-col-reverse md:flex-row ${styles.whyContainer} py-[10%] md:py-0`}>
-          <div className={`${styles.whyDivText} bg-blue-500 md:w-[40%] md:h-[70%] mr-[2.5%] flex mt-[70%] md:mt-0 flex-col justify-between px-8 md:px-0`}>
-            <h3 className='font-poppins font-[600] text-[18px] leading-[27px] text-[#E9AD11] 3xl:text-[22px] 4xl:text-[25px]'>
-              Why Choose Us?
-            </h3>
-            <h1 className='font-poppins font-[800] text-[20px] md:text-[24px] lg:text-[28px] leading-[42px] text-[#535252] 3xl:text-[32px] 4xl:text-[36px]'>
-              Some Words About Us
-            </h1>
-            <p className={`font-poppins font-[400] text-[13px] 3xl:text-[20px] 3xl:leading-[35px] 4xl:text-[25px] 4xl:leading-[45px] 5xl:leading-[55px] leading-[27px] ${styles.whyText}`}>This is an item banking system that manages the process of: item authoring, reviewing and test assembly. It is designed to be used by professionals and test developers, teachers and educators on classroom based assessments. Moreover, it is designed with a package of features created specifically to make item and test development easier, faster, user-friendly and more cost effective.</p>
-            <button className='bg-[#E7BB49] py-[2.5%] w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%] rounded-lg mt-[2%] text-white font-openSans font-[700] leading-[22px] text-[16px] 3xl:text-[20px] 4xl:text-[25px]'>Request Demo</button>
-          </div>
-          <div className={`w-[90%] md:w-[40%] md:h-[70%] ml-[2.5%] md:mt-[10%] xl:mt-0 relative ${styles.vidDiv}`}>
-            <img src={triangle} alt="" className='absolute top-0 right-0' />
-            <img src={vid} alt="" className={`absolute z-10 top-[12px] right-[3%] w-[95%] ${styles.vidImg}`} />
-          </div>
+      <div className='bg-[#d9d9d944] 2xl:pb-[5vh]'>
+        <div className={` md:h-[50vh] lg:h-[40vh] xl:h-[60vh]  justify-around md:justify-center items-center flex flex-col-reverse md:flex-row ${styles.whyContainer} py-[10%] md:py-0`}>
+            <div className={`${styles.whyDivText} bg-blue-500 md:w-[40%] md:h-[70%] mr-[2.5%] flex mt-[70%] md:mt-0 flex-col justify-between px-8 md:px-0`}>
+              <h3 className='font-poppins font-[600] text-[18px] leading-[27px] text-[#E9AD11] 3xl:text-[22px] 4xl:text-[25px]'>
+                Why Choose Us?
+              </h3>
+              <h1 className='font-poppins font-[800] text-[20px] md:text-[24px] lg:text-[28px] leading-[42px] text-[#535252] 3xl:text-[32px] 4xl:text-[36px]'>
+                Some Words About Us
+              </h1>
+              <p className={`font-poppins font-[400] text-[13px] 3xl:text-[20px] 3xl:leading-[35px] 4xl:text-[25px] 4xl:leading-[45px] 5xl:leading-[55px] leading-[27px] ${styles.whyText}`}>This is an item banking system that manages the process of: item authoring, reviewing and test assembly. It is designed to be used by professionals and test developers, teachers and educators on classroom based assessments. Moreover, it is designed with a package of features created specifically to make item and test development easier, faster, user-friendly and more cost effective.</p>
+              <button className='bg-[#E7BB49] py-[2.5%] w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%] rounded-lg mt-[2%] text-white font-openSans font-[700] leading-[22px] text-[16px] 3xl:text-[20px] 4xl:text-[25px]'>Request Demo</button>
+            </div>
+            <div className={`w-[90%] md:w-[40%] md:h-[70%] ml-[2.5%] md:mt-[10%] xl:mt-0 relative ${styles.vidDiv}`}>
+              <img src={triangle} alt="" className='absolute top-0 right-0' />
+              <img src={vid} alt="" className={`absolute z-10 top-[12px] right-[3%] w-[95%] ${styles.vidImg}`} />
+            </div>
+        </div>
       </div>
 
 
