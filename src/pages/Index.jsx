@@ -103,7 +103,7 @@ function Index() {
     <div>
         <Heroe/>
         {/* about */}
-      <div className={`mt-[8%] flex flex-col md:h-[100vh] lg:h-[70vh] xl:h-auto px-8 py-4 md:py-0 md:px-0 ${styles.aboutContainer}`}>
+      <div className={`mt-[8%] flex flex-col md:h-[90vh] lg:h-[70vh] xl:h-auto px-8 py-4 md:py-0 md:px-0 ${styles.aboutContainer} `}>
         <h6 className={` ${styles.aboutourproduct} font-poppins text-[18px] md:text-[25px] font-[600] leading-[38px] text-center text-[#E9AD11] 3xl:text-[35px] 4xl:text-[40px]`}>About Our Product</h6>
         <h1 className={` ${styles.makeinformed} mx-auto xl:w-[85%] font-poppins text-[20px] md:text-[35px] text-[#535252] font-[800] leading-[30px] md:leading-[53px] text-center mt-[1.5%] md:px-[8%] 3xl:text-[45px] 4xl:text-[50px] `}>Make informed, data-driven decisions with tailored item bank reporting</h1>
         <p className={` ${styles.solution} font-poppins text-[12px] md:text-[15px] font-[400] leading-[22.6px] text-center mt-[5%] px-[8%] text-[#535252] 3xl:text-[20px] 4xl:text-[25px]`}>This solution automates the entire item authoring process thus enabling a more standardized and scalable environment essential to developing and maintaining effective test/exams.</p>

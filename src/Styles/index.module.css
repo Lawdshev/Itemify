@@ -47,7 +47,7 @@
 }
 @media (min-width: 1400px){
     .aboutContainer{
-        height: 120vh;
+        margin-bottom: 10vh;
     }
     .whyContainer{
         margin-top: 0;
