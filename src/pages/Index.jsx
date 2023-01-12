@@ -120,7 +120,7 @@ function Index() {
       {/* why us */}
       <div className='bg-[#d9d9d944] 2xl:pb-[5vh]'>
         <div className={` md:h-[50vh] lg:h-[40vh] xl:h-[60vh]  justify-around md:justify-center items-center flex flex-col-reverse md:flex-row ${styles.whyContainer} py-[10%] md:py-0`}>
-            <div className={`${styles.whyDivText} bg-blue-500 md:w-[40%] md:h-[70%] mr-[2.5%] flex mt-[70%] md:mt-0 flex-col justify-between px-8 md:px-0`}>
+            <div className={`${styles.whyDivText} md:w-[40%] md:h-[70%] mr-[2.5%] flex mt-[70%] md:mt-0 flex-col justify-between px-8 md:px-0`}>
               <h3 className='font-poppins font-[600] text-[18px] leading-[27px] text-[#E9AD11] 3xl:text-[22px] 4xl:text-[25px]'>
                 Why Choose Us?
               </h3>
@@ -139,7 +139,7 @@ function Index() {
 
 
         {/* main features */}
-         <div className={`${styles.features} py-[10%] lg:py-0 lg:h-[70vh] xl:h-[100vh] flex items-center justify-center`}>
+         <div className={`${styles.features}  lg:py-0 lg:h-[70vh] xl:h-[100vh] flex items-center justify-center`}>
          <div className={` py-[10%] lg:py-0 lg:h-[70vh] xl:h-[100vh] flex items-center justify-center bg-[#111111d8]`}>
             <div className='h-[90%] w-[95%] flex flex-col justify-between '>
                 <div className='flex flex-col h-[10%] w-full'>
@@ -159,13 +159,13 @@ function Index() {
          </div>
 
         {/* latest news */}
-        <div className='lg:h-[100vh] w-full bg-[#FFFFFF] flex items-center justify-center my-[10%] lg:my-0'>
-        <div className='h-[85%] w-full lg:w-[90%] flex flex-col justify-between'>
-             <div className='flex flex-col h-[10%] w-full'>
-                <h1 className=' self-center text-[24px] md:text-[30px] text-[#E9AD11] font-poppins font-[600] leading-[45px] 2xl:text-[36px] 2xl:leading-[56px]'>Latest News</h1>
+        <div className={` ${styles.newsDiv} lg:h-[100vh] 2xl:h-auto w-full bg-[#FFFFFF] flex items-center justify-center my-[10%] lg:my-0`}>
+        <div className='h-[85%] w-full lg:w-[90%] flex flex-col justify-between 2xl:mb-[12vh]'>
+             <div className='flex flex-col h-[10%] w-full 2xl:mt-[10vh]'>
+                <h1 className='self-center text-[24px] md:text-[30px] text-[#E9AD11] font-poppins font-[600] leading-[45px] 2xl:text-[36px] 2xl:leading-[56px]'>Latest News</h1>
                 <div className='h-[1px] w-[130px] 2xl:w-[10%] bg-[#E9AD1169] self-center mt-3'></div>
              </div>
-             <div className='h-[85%] flex flex-wrap justify-around'>
+             <div className='h-[85%] 2xl:h-auto 2xl:mt-[5vh] flex flex-wrap justify-around'>
                 {
                   news.map(news=>{
                     return <NewsCard {...news}/>

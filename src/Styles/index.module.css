@@ -63,6 +63,8 @@
     }
 }
 
+
+
 @media screen and (orientation:landscape) and (max-width:900px){
     .about{
         width: 100%;
@@ -87,10 +89,11 @@
         font-size: 15px;
     }
     .whyContainer{
-        height: 850px;
+        height: 950px;
         display: flex;
         justify-content: space-around;
         flex-direction: column-reverse;
+        margin-top: 100px;
     }
     .vidDiv{
         width:90%;
@@ -99,6 +102,7 @@
         height: 350px;
         width: 100%;
         padding: 0 5%;
+        margin-bottom: 50px;
     }
     .whyText{
         width: 100%;
@@ -111,6 +115,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .newsCard{
+        height: 448px;
+        width: 334px;
+    }
+    .elearning{
+         height: 300px;
     }
 }
 
@@ -129,5 +140,16 @@
         width: 100%;
         justify-content: space-around;
     }
+    .whyContainer{
+        height: 500px;
+    }
+    .newsDiv{
+        height: auto;
+        padding: 10% 0;
+    }
+    .newsCard{
+        margin:20px;
+    }
+   
     
 }
