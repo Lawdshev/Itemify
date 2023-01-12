@@ -1,8 +1,9 @@
 import React from 'react';
+import indexStyles from '../Styles/index.module.css'
 
 function FeatureCard({icon, head, text}) {
   return (
-    <div className='flex lg:w-[32%] h-[30vh] md:w-1/2 m-5 md:mx-0 md:my-3 lg:m-0 lg:h-[45%] justify-around'>
+    <div className={`flex lg:w-[32%] h-[30vh] md:w-1/2 m-5 md:mx-0 md:my-3 lg:m-0 lg:h-[45%] justify-around ${indexStyles.featureCard}`}>
         <div className='w-[95%] md:w-[90%] h-full flex flex-col items-center justify-around text-[#FFFFFF] font-poppins'>
             <img src={icon} className='w-[41px] h-[41px] text-[#E9AD11]'/>
             <h1 className='text-[17px] 3xl:text-[25px] 4xl:text-[30px] leading-[25.5px] font-semibold text-center'>{head}</h1>
@@ -13,5 +14,4 @@ function FeatureCard({icon, head, text}) {
     </div>
   )
 }
-
 export default FeatureCard

@@ -10,8 +10,8 @@ function Navbar() {
   }
 
   return (
-    <div className='bg-white mt-[15%] md:mt-[0] md:hidden'>
-    <div className='absolute right-5 z-20 block top-4 bar md:hidden' onClick={toggleNavbar}>
+    <div className='bg-white mt-[15%] md:mt-[0] md:hidden landscape:hidden'>
+    <div className='absolute right-5 z-20 block top-4 bar md:hidden togglebtn' onClick={toggleNavbar}>
         <i className="fa-solid fa-bars text-black text-[20px] " ></i>
     </div>
     <p to='/' className='bg-white w-full'>

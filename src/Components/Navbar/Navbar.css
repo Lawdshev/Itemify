@@ -116,3 +116,12 @@
     height: 100vh;
   }
 }
+
+@media screen and (orientation: landscape) and (max-width: 900px){
+  .togglebtn{
+    display: none;
+  }
+  .joinUsBtn2{
+    margin-right: 2%;
+  }
+}

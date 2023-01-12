@@ -91,3 +91,32 @@
         margin-top: 7vh;
     }
 }
+
+@media screen and (orientation:landscape) and (max-width:900px) {
+    .container{
+        height: 500px;
+    }
+    .gen{
+        height: 40%;
+        width: 70%;
+    }
+    .heroHead{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .heroText{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .gtStarted,.lrnMore{
+        width: auto;
+        height: 40px;
+        padding: 2px 8px ;
+    }
+}
+@media screen and (orientation:landscape) and (min-width:901px) and (max-width:1100px) {
+    .container{
+        height: 700px;
+    }
+   
+}

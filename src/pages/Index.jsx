@@ -103,12 +103,12 @@ function Index() {
     <div>
         <Heroe/>
         {/* about */}
-      <div className={`mt-[8%] flex flex-col md:h-[100vh] lg:h-[70vh] xl:h-[100vh] px-8 py-4 md:py-0 md:px-0 ${styles.aboutContainer}`}>
-        <h6 className='font-poppins text-[18px] md:text-[25px] font-[600] leading-[38px] text-center text-[#E9AD11] 3xl:text-[35px] 4xl:text-[40px]'>About Our Product</h6>
-        <h1 className='font-poppins text-[20px] md:text-[35px] text-[#535252] font-[800] leading-[30px] md:leading-[53px] text-center mt-[1.5%] md:px-[8%] 3xl:text-[45px] 4xl:text-[50px] '>Make informed, data-driven decisions with tailored item bank reporting</h1>
-        <p className='font-poppins text-[12px] md:text-[15px] font-[400] leading-[22.6px] text-center mt-[5%] px-[8%] text-[#535252] 3xl:text-[20px] 4xl:text-[25px]'>This solution automates the entire item authoring process thus enabling a more standardized and scalable environment essential to developing and maintaining effective test/exams.</p>
+      <div className={`mt-[8%] flex flex-col md:h-[100vh] lg:h-[70vh] xl:h-auto px-8 py-4 md:py-0 md:px-0 ${styles.aboutContainer}`}>
+        <h6 className={` ${styles.aboutourproduct} font-poppins text-[18px] md:text-[25px] font-[600] leading-[38px] text-center text-[#E9AD11] 3xl:text-[35px] 4xl:text-[40px]`}>About Our Product</h6>
+        <h1 className={` ${styles.makeinformed} mx-auto xl:w-[85%] font-poppins text-[20px] md:text-[35px] text-[#535252] font-[800] leading-[30px] md:leading-[53px] text-center mt-[1.5%] md:px-[8%] 3xl:text-[45px] 4xl:text-[50px] `}>Make informed, data-driven decisions with tailored item bank reporting</h1>
+        <p className={` ${styles.solution} font-poppins text-[12px] md:text-[15px] font-[400] leading-[22.6px] text-center mt-[5%] px-[8%] text-[#535252] 3xl:text-[20px] 4xl:text-[25px]`}>This solution automates the entire item authoring process thus enabling a more standardized and scalable environment essential to developing and maintaining effective test/exams.</p>
         <img src={line} alt="" className='self-center mt-[3%]' />
-        <div className=' flex flex-wrap '>
+        <div className={`${styles.about} flex flex-wrap mx-auto `}>
           {
              about.map(feature=>{
               return <AboutCard {...feature}/>
@@ -119,7 +119,7 @@ function Index() {
       
       {/* why us */}
       <div className={` md:h-[50vh] lg:h-[40vh]  xl:h-[60vh] justify-around md:justify-center items-center bg-[#d9d9d944] flex flex-col-reverse md:flex-row ${styles.whyContainer} py-[10%] md:py-0`}>
-          <div className='md:w-[40%] md:h-[70%] mr-[2.5%] flex mt-[70%] md:mt-0 flex-col justify-between px-8 md:px-0'>
+          <div className={`${styles.whyDivText} bg-blue-500 md:w-[40%] md:h-[70%] mr-[2.5%] flex mt-[70%] md:mt-0 flex-col justify-between px-8 md:px-0`}>
             <h3 className='font-poppins font-[600] text-[18px] leading-[27px] text-[#E9AD11] 3xl:text-[22px] 4xl:text-[25px]'>
               Why Choose Us?
             </h3>
@@ -144,7 +144,7 @@ function Index() {
                     <h1 className=' self-center text-[24px] 3xl:text-[32px] 4xl:text-[38px] md:text-[30px] text-[#E9AD11] font-poppins font-[600] leading-[45px]'>Main Features</h1>
                     <div className='h-[1px] w-[130px] bg-[#E9AD1169] self-center mt-3'></div>
                 </div>
-                <div className=' h-[90%] lg:h-[85%] w-full flex flex-wrap justify-between'>
+                <div className={`h-[90%] lg:h-[85%] w-full flex flex-wrap justify-between ${styles.featCont}`}>
                   {
                     features.map(feature => {
                       return <FeatureCard {...feature}/>

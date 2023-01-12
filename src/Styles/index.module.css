@@ -32,9 +32,9 @@
 } 
 
 @media (min-width: 1200px){
-    .aboutContainer{
+    /* .aboutContainer{
         height: 150vh;
-    }
+    } */
     .whyContainer{
         margin-top: 10vh;
     }
@@ -61,4 +61,73 @@
     .vidImg{
         width: 95%;
     }
+}
+
+@media screen and (orientation:landscape) and (max-width:900px){
+    .about{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .aboutcard{
+        height: 300px;
+        width: 45%;
+        margin-left: 0;
+    }
+    .aboutContainer{
+        height: auto;
+    }
+    .aboutourproduct{
+        font-size: 25px;
+    }
+    .makeinformed{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .solution{
+        font-size: 15px;
+    }
+    .whyContainer{
+        height: 850px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+    .vidDiv{
+        width:90%;
+    }
+    .whyDivText{
+        height: 350px;
+        width: 100%;
+        padding: 0 5%;
+    }
+    .whyText{
+        width: 100%;
+    }
+    .featureCard{
+        width: 40%;
+        height: 200px;
+    }
+    .featCont{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (orientation:landscape) and (min-width:901px) and (max-width:1100px) {
+    .aboutContainer{
+        height: auto;
+        margin:auto;
+        margin-top: 5vh;
+    } 
+    .aboutcard{
+        height: 300px;
+        width: 300px;
+        margin-left: 0;
+    } 
+     .about{
+        width: 100%;
+        justify-content: space-around;
+    }
+    
 }
