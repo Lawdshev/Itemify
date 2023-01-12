@@ -75,7 +75,7 @@
 }
 @media screen and (min-width:1400px){
     .container{
-        height: 80vh;
+        height: 100vh;
     }
     .head{
         font-size: 60px;

@@ -3,7 +3,7 @@ import heroStyles from './Heroe.module.css'
 
 function Heroe() {
     return (
-      <div className={`bg-black   ${heroStyles.container}`} >
+      <div className={`bg-black  ${heroStyles.container}`} >
           <div className={` xl:px-0 ${heroStyles.overlay}`}>
             <div className='text-white w-full xl:w-[73%] h-[70%] md:h-[50%] lg:h-[40%] flex flex-col items-center justify-between px-4 md:px-0'>
               <h1 className='font-poppins font-[700] text-[16px] md:text-[36px] 4xl:text-[45px] leading-[20px] md:leading-[45px] text-center'>Efficiently Manage Your Team, Manage the workflow of items, authors, and reviewers</h1>
