@@ -3,7 +3,7 @@ import styles from '../Styles/index.module.css'
 
 function NewsCard({img}) {
   return (
-    <div className={`${styles.newsCard} w-4/5 m-7 lg:m-0 mx-auto md:mx-0 md:w-[334px]  2xl:w-[25%] h-[448px] 2xl:h-auto  flex flex-col justify-between bg-[#FFFFFF]`}>
+    <div className={`${styles.newsCard} w-4/5 m-7 lg:m-0 mx-auto md:mx-0 md:w-[334px] 2xl:w-[30%] h-[448px] 2xl:h-auto  flex flex-col justify-between bg-[#FFFFFF]`}>
         <img src={img} className='w-full md:h-[50%]' />
         <div className='flex w-[70%] h-[5%] justify-between px-4 2xl:px-8 2xl:mt-[2vh] font-poppins text-[12px] leading-[18px] 2xl:text-[20px] 2xl:leading-[22px] 4xl:text-[24px] 4xl:leading-[25px]'>
             <p className='text-[#E9AD11]'>By Admin</p>
