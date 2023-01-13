@@ -9,10 +9,10 @@ function LargeNav() {
           <img src={logo} alt="" />
         </div>
         <div className='flex flex-row items-center justify-between w-[45%] font-openSans text-[16px] font-[700] leading-[22px] 3xl:text-[24px]'>
-              <p >About</p>
-              <p >Blog</p>
-              <p >Contact</p>
-              <p >FAQ</p> 
+              <a href='#About' className='hover:text-[#E7BB49C7]' >About</a>
+              <a href='#Blog' className='hover:text-[#E7BB49C7]'>Blog</a>
+              <a href='#Contact ' className='hover:text-[#E7BB49C7]' >Contact</a>
+              <a className='hover:text-[#E7BB49C7]'> FAQ </a> 
         </div>
         <button className=' px-3 bg-[#E7BB49] w-[11%] 3xl:w-[12%] xl:w-[8%] h-[40px] 3xl:h-[60px] md:mr-[2%] lg:mr-0 rounded-md text-white font-openSans text-[16px] font-[700] leading-[22px] hover:bg-[#E9AD11] 3xl:text-[24px] joinUsBtn2'>Join us</button>
       </div>

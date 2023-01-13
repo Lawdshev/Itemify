@@ -15,4 +15,4 @@ function NewsCard({img}) {
   )
 }
 
-export default NewsCard
+export default NewsCard;
