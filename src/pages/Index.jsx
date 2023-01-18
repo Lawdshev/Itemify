@@ -1,4 +1,4 @@
-import React from 'react';
+import React,  { useRef, useState } from 'react';
 import Heroe from '../Components/Heroe/Heroe'
 import line from '../assets/Line 2.png';
 import icon4 from '../assets/Vector.png'
@@ -23,6 +23,7 @@ import NewsCard from '../Components/NewsCard';
 import news1 from "../assets/Rectangle 45.png";
 import news2 from "../assets/Rectangle 46.png";
 import news3 from "../assets/Rectangle 47.png";
+import video from '../assets/video.mkv'
 
 // news
 const news =[
@@ -99,6 +100,25 @@ const features = [
 ]
 
 function Index() {
+  const [played,setPlayed] = useState(false);
+  
+  const videoRef = useRef();
+  const handlePlay = () => {
+      videoRef.current.play();
+      setPlayed(true)
+      if(videoRef.current.played){
+       console.log('playing')
+      }
+
+  }
+  const handlePause = () => {
+      videoRef.current.pause();
+      setPlayed(false)
+      if(videoRef.current.paused){
+       console.log('paused')
+      }
+  }
+
   return (
     <div>
         <Heroe/>
@@ -119,8 +139,8 @@ function Index() {
       
       {/* why us */}
       <div className='bg-[#d9d9d944] 2xl:pb-[5vh]'>
-        <div className={` md:h-[50vh] lg:h-[40vh] xl:h-[60vh]  justify-around md:justify-center items-center flex flex-col-reverse md:flex-row ${styles.whyContainer} py-[10%] md:py-0`}>
-            <div className={`${styles.whyDivText} md:w-[40%] md:h-[70%] mr-[2.5%] flex mt-[70%] md:mt-0 flex-col justify-between px-8 md:px-0`}>
+        <div className={` lg:h-[40vh] xl:h-[60vh]   justify-around lg:justify-center items-center flex flex-col-reverse lg:flex-row ${styles.whyContainer} py-[10%] md:py-0`}>
+            <div className={`${styles.whyDivText} lg:w-[40%] lg:h-[70%] mr-[2.5%] flex mt-[5vh] lg:mt-0 flex-col justify-between px-8 lg:px-0 md:mb-[5vh] lg:[mb-0]`}>
               <h3 className='font-poppins font-[600] text-[18px] leading-[27px] text-[#E9AD11] 3xl:text-[22px] 4xl:text-[25px]'>
                 Why Choose Us?
               </h3>
@@ -128,11 +148,30 @@ function Index() {
                 Some Words About Us
               </h1>
               <p className={`font-poppins font-[400] text-[13px] 3xl:text-[20px] 3xl:leading-[35px] 4xl:text-[25px] 4xl:leading-[45px] 5xl:leading-[55px] leading-[27px] ${styles.whyText}`}>This is an item banking system that manages the process of: item authoring, reviewing and test assembly. It is designed to be used by professionals and test developers, teachers and educators on classroom based assessments. Moreover, it is designed with a package of features created specifically to make item and test development easier, faster, user-friendly and more cost effective.</p>
-              <button className='bg-[#E7BB49] py-[2.5%] w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%] rounded-lg mt-[2%] text-white font-openSans font-[700] leading-[22px] text-[16px] 3xl:text-[20px] 4xl:text-[25px]'>Request Demo</button>
+              <button className='bg-[#E7BB49] py-[2.5%] w-[50%] md:w-[30%] lg:w-[30%] xl:w-[25%] rounded-lg mt-[2%] text-white font-openSans font-[700] leading-[22px] text-[16px] 3xl:text-[20px] 4xl:text-[25px]'>Request Demo</button>
             </div>
-            <div className={`w-[90%] md:w-[40%] md:h-[70%] ml-[2.5%] md:mt-[10%] xl:mt-0 relative ${styles.vidDiv}`}>
+
+            <div className={`w-[100%] h-[50vh]  lg:w-[50%] xl:w-[40%] lg:h-[70%] lg:ml-[2.5%]  xl:mt-0 relative ${styles.vidDiv}`}>
               <img src={triangle} alt="" className='absolute top-0 right-0' />
-              <img src={vid} alt="" className={`absolute z-10 top-[12px] right-[3%] w-[95%] ${styles.vidImg}`} />
+
+              <div  className={`w-[98%] flex  justify-center absolute z-10 top-[12px] right-[0] 2xl:w-[99.5%] left-0 h-[95%] ${styles.vidImg}`}>
+                    <video src={video} poster={vid}  ref={videoRef} onClick={
+                        ()=>{
+                          played? handlePause() : handlePlay()
+                        }
+                      } >
+                    </video>
+                {
+                 !played ?
+                    <div className='h-[67px] w-[67px] rounded-full z-20 flex items-center justify-center absolute   bg-[#E9AD11] mx-auto top-[40%] ' onClick={handlePlay}>
+                            <i className='fa solid fa-play text-[27px] text-white' ></i>
+                    </div>  
+                      : 
+                    <div className='h-[67px] w-[67px] rounded-full z-20 hidden items-center justify-center absolute   bg-[#E9AD11] mx-auto top-[40%] opacity-40 pause' onClick={handlePause}><i className='fa solid fa-pause text-[27px] text-white' ></i></div>
+                }
+                   
+              </div>
+            
             </div>
         </div>
       </div>

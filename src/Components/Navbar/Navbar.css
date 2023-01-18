@@ -54,6 +54,10 @@
   background-color: #E9AD11;
 }
 
+.LargeNav{
+  box-shadow: 19px 0 black;
+}
+
 
 
 @media screen and (max-width:767px){
